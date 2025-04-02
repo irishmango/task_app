@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 int multiplyAdvanced(int a, int b) {
   if (b == 0) return 0;
   if (b > 0) return a + multiplyAdvanced(a, b - 1);
-  if (b < 0) return -multiplyAdvanced(a, -b);
-  return 0;
+  return -multiplyAdvanced(a, -b);
 }
 
 class S3388 extends StatefulWidget {
